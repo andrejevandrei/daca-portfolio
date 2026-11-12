@@ -30,7 +30,9 @@ Kõik selles portfoolios olevad projektid lahendavad Eesti jätkusuutliku moeett
 daca-portfolio/
 ├── README.md                            ← Üldine portfoolio tutvustus 
 ├── Week-00-Onboarding/                  ← Sisseelamine
-│   └── README.md                        ← Kokkuvõte
+│   ├── N00_Grupitöö.sql                 ← SQL päringud
+│   ├── N00_README.md                    ← Kokkuvõte
+│   └── N00_Results.md                   ← SQL päringute tulemused
 │
 ├── Week-XX-Activity/                    ← Iganädalane töö
 │   ├── NXX_Roll_X_Grupitöö.sql          ← SQL päringud
