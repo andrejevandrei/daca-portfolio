@@ -9,7 +9,11 @@ CREATE TABLE team_members (                                   --Tabeli koostamin
 --Tabeli täiendamine
 INSERT INTO team_members (name, role_week1, os)               --andmete lisamine, sulgudes veergude nimed
    VALUES                                                     --tabeli sisu, järjestus vastavalt veergude nimedele
-     ('Aleksander Erik Ild', 'A: Data Extraction', 'Mac'),
-     ('Andrei Andrejev', 'B: Data Processing', 'Win'),
-     ('Kärt Kunnus', 'C: Visualization', 'Mac'),
-     ('Rena Selliov', 'D: Business Recommendation', 'Win');
+     ('Aleksander Erik Ild', 'A', 'Mac'),
+     ('Andrei Andrejev', 'B', 'Win'),
+     ('Kärt Kunnus', 'C', 'Mac'),
+     ('Rena Selliov', 'D', 'Win');
+--Tabeli näitamine
+select
+name as "Nimi", role_week1 as "Nädal 1 roll", os as "Operatsioonisüsteem"
+from team_members
