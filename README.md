@@ -27,14 +27,15 @@ Kõik selles portfoolios olevad projektid lahendavad Eesti jätkusuutliku moeett
 
 
 daca-portfolio/
-├── README.md                      ← Üldine portfoolio tutvustus 
-├── week-X/                        ← Iganädalane töö
-│   ├── NXX Grupitöö Roll X.sql    ← SQL päringud
-│   ├── Results.md                 ← SQL päringute tulemused
-│   └── README.md                  ← Kokkuvõte ülevaade, järelduste ja soovitustega
-├── week-Y/
-│   ├── NXX Grupitöö Roll X.sql
-│   ├── Results.md
-│   └── README.md
+├── README.md                            ← Üldine portfoolio tutvustus 
+├── week-0/                              ← Sisseelamine
+│   └── README.md                        ← Kokkuvõte
+├── week-XX/                             ← Iganädalane töö
+│   ├── NXX Roll X Grupitöö.sql          ← SQL päringud
+│   ├── NXX Roll X README.md             ← Kokkuvõte ülevaade, järelduste ja soovitustega
+│   └── NXX Roll X Results.md            ← SQL päringute tulemused
+├── week-XY/
+│   ├── NXY Roll X Grupitöö.sql
+│   ├── NXY Roll X README.md
+│   └── NXY Roll X Results.md
 └── ...
-
