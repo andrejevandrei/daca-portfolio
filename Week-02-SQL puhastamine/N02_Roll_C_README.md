@@ -2,16 +2,11 @@
 # Nädal 2: SQL Puhastamine
 
 ## Projekti eesmärk
-UrbanStyle.ltd on kasvanud kiiresti – 150% kasv viimase kahe aasta jooksul. Ettevõtte andmebaas sisaldab müügi-, kliendi-, toote- ja kauplusteandmeid, aga keegi pole neid süstemaatiliselt uurinud. Toomas vajab abi, et moodustada tervikpilt kogu andmestikust.
-
-IT-direktor Toomas Kask:
-> "Ma ei usalda neid andmeid. Kas keegi saab mulle öelda, mis tabelites üldse on? Mitu rida? Mis veerud? Mis on puudu? Ma tahan IGA tabeli kohta eraldi raportit -- enne kui me midagi muud teeme, peame teadma, millised andmed meil on ja mis seisus need on."
-
-Töö eesmärk on kontrollida ja puhastada `products` tabeli andmed, eemaldada vigased kirjed ning anda IT-direktorile täpne ülevaade tooteandmebaasi tegelikust seisust.
+IT-direktor Toomas Kask leidis müügitabelist (tabel `sales`) kokku 5 116 duplikaatrida. Kahe nädala pärast toimuva juhatuse koosoleku tõttu vajab tegevjuht Kristi Tamm täpseid ja puhtaid numbreid igast tabelist. Selle projekti eesmärk on analüüsida ja puhastada toodete tabelit (tabel `products`)
 
 ## Kasutatud tööriistad ja meetodid
-- **Andmebaas / Keel:** PostgreSQL (Supabase), SQL (`products_test` testtabel, duplikaatide eemaldamine, NULL-väärtuste kontroll)
-- **Tööriistad:** VS Code / SQLTools, GitHub
+- **Andmebaas / Keel:** PostgreSQL (Supabase)
+- **Tööriistad:** GitHub
 
 ## Kontrollitud probleemid
 Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll `products` tabelis.
@@ -26,4 +21,13 @@ Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järj
 
 ## Soovitus Toomasele
 Eemaldada duplikaatsed nimekirjed, arvestades `eco_certified` väärtusi (jätta alles täielikum kirje), ning võimalusel täiendada puuduvad ökosertifikaatide data.
-```
+
+##  Projekti struktuur ja käivitamine
+- `N02_Roll_B_Grupitöö.sql` – SQL päringud andmete analüüsiks
+- `N01_Roll_B_Results.md` – Päringu tulemuste väljavõte
+- `N01_Roll_B_Grupitöö.sql` – SQL päringud andmete analüüsiks
+- `N01_Roll_B_Results.md` – Päringu tulemuste väljavõte
+
+##  AI kasutamise reflektsioon
+Kasutasin AI-d (ChatGPT) concat ja round funktsioonide õppimiseks, et anda korrektset ülevadet linnade kohta
+
