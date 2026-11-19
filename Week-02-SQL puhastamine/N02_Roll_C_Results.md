@@ -61,7 +61,7 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 
 ## `NULL` väärtuste analüüs
 
-*Leiame mitu `NULL` või puuduvat andmet on tabelis*
+*Leiame mitu `NULL` või puuduvat andmet on tabelis - on 18 rida öko sertifikaadita reast* `eco_certified`. *Eelmise päringu raames avastati, et üks nendest on duplikaat reast.*
 | Nimeta | Kategooriata | Alamkategooriata | Tarnijata | Omahinnata | Müügihinnata | ECO sertifikaadita | Loomise kuupäevata |
 | :----: | :----------: | :--------------: | :-------: | :--------: | :----------: | :----------------: | :----------------: |
 | 0      | 0            | 0                | 0         | 0          | 0            | 18                 | 0                  |
@@ -70,7 +70,7 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 ## Kokkuvõte
 **Kontrollitud probleemid**: Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll.
 
-**Tulemused arvudes**: 12 korduvat tootenime veerust product_name, millest 11 on identsed kirjed ja ühel erines ökosertifikaadi väärtus (`FALSE` vs `NULL`). Veerus eco_certified on 17 `NULL` ökosertifikaati ning veel üks `NULL` väärtusega kanne langeb kokku duplikaatse nimega. Ülejäänu on loogiline ja järjekindel.
+**Tulemused arvudes**: 12 korduvat tootenime veerust product_name, millest 11 on identsed kirjed ja ühel erines ökosertifikaadi väärtus (`FALSE` vs `NULL`). Veerus `eco_certified` on 17 `NULL` ökosertifikaati ning veel üks `NULL` väärtusega kanne langeb kokku duplikaatse nimega. Ülejäänu on loogiline ja järjekindel.
 
 **Peamine leid või risk**: 12 duplikaati võivad moonutada tulemusi ja vähendada nende usaldusväärsust.
 
