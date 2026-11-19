@@ -84,12 +84,19 @@ Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumi
 | Menswear    | jakid, kampsunid, püksid, särgid, ülikonnad      |
 | Womenswear  | jakid, kleidid, pluusid, püksid, pusad, seelikud |
 
-*Eraldi vaatame alamkategooriaid, mis kohtub mitmes kategoorias. Neid on kolm ja need tootetüübid võivad eksisteerida mitmes kategoorias*
+*Eraldi vaatame alamkategooriaid, mis kohtuvad mitmes kategoorias. Neid on kolm ja need tootetüübid võivad eksisteerida mitmes kategoorias*
 | Alamkategooria | Mitmes kategoorias | Mis kategooriates              |
 | :------------: | :----------------: | :----------------------------: |
 | jakid          | 3                  | Kidswear, Menswear, Womenswear |
 | püksid         | 3                  | Kidswear, Menswear, Womenswear |
 | kleidid        | 2                  | Kidswear, Womenswear           |
+
+*Kannete vahemik on kooskõlas teiste tabelitega*
+| Vanim toode | Uusim toode |
+| :---------: | :---------: |
+| 15.01.2020  | 16.12.2024  |
+
+## Andmete järjekindlus
 
 ## Kokkuvõte
 **Kontrollitud probleemid**: Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll.
