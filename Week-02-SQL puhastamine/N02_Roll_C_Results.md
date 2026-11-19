@@ -1,20 +1,20 @@
 # Results
 
 ## Test tabeli loomine
-Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskida peaandmebaasi rikkumist
+Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskida peaandmebaasi rikkumist.
 
-*Kontrollimiseks võrdleme ridade arvu, et vältida lisaduplikaatide tekkimist*
+*Kontrollimiseks võrdleme ridade arvu, et vältida lisaduplikaatide tekkimist*.
 | Originaal | Test |
 | :-------: | :--: |
 | 362       | 362  |
 
 ## Duplikaatide analüüs
-*Tabelis leidub üks veerg duplikaatidega - 12 tootenimi veerust* `product_name`
+*Tabelis leidub üks veerg duplikaatidega - 12 tootenimi veerust* `product_name`.
 | Ridu | ID  | Unikaalsed ID | ID duplikaadid | Tooted | Unikaalsed tooted | Nimi duplikaadid |
 | :--: | :-: | :-----------: | :------------: | :----: | :---------------: | :--------------: |
 | 362  | 362 | 362           | 0              | 362    | 350               | 12               |
 
-*Leiame toodete nimed ja duplikaatide arv*
+*Leiame toodete nimed ja duplikaatide arv*.
 | Toode                             | Duplikaate |
 | :-------------------------------: | :--------: |
 | Moodne keraamiline sall           | 2          |
@@ -30,7 +30,7 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 | Elegantne keraamiline rahakott    | 2          |
 | Vintage nahkne tossud             | 2          |
 
-*Vaatame need read detailsemalt - näeme, et on 11 identset kannete paari ja ühel erineb ökosertifikaadi väärtus* (`FALSE` vs `NULL`)
+*Vaatame need read detailsemalt - näeme, et on 11 identset kannete paari ja ühel erineb ökosertifikaadi väärtus* (`FALSE` vs `NULL`).
 | product_id | product_name                      | category    | subcategory | supplier               | cost_price | retail_price | eco_certified | created_at |
 | :--------: | :-------------------------------: | :---------: | :---------: | :--------------------: | :--------: | :----------: | :-----------: | :--------: |
 | 1356       | Elegantne keraamiline rahakott    | Accessories | kotid       | Haapsalu Villased OÜ   | 94.85      | 155.84       | true          | 2022-12-07 |
@@ -61,7 +61,7 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 
 ## `NULL` väärtuste analüüs
 
-*Leiame mitu `NULL` või puuduvat andmet on tabelis - on 18 rida öko sertifikaadita reast* `eco_certified`. *Eelmise päringu raames avastati, et üks nendest on duplikaat reast.*
+*Leiame mitu `NULL` või puuduvat andmet on tabelis - on 18 rida öko sertifikaadita reast* `eco_certified`. *Eelmise päringu raames avastati, et üks nendest on duplikaat reast*.
 | Nimeta | Kategooriata | Alamkategooriata | Tarnijata | Omahinnata | Müügihinnata | ECO sertifikaadita | Loomise kuupäevata |
 | :----: | :----------: | :--------------: | :-------: | :--------: | :----------: | :----------------: | :----------------: |
 | 0      | 0            | 0                | 0         | 0          | 0            | 18                 | 0                  |
@@ -70,12 +70,12 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 
 Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumiga, mis vajab ärilist tähelepanu. Ülejäänud andmed on järjekindlad ja loogilised.
 
-*Leiame ebaloogilisi väärtusi - 10 toodet kahjumiga*
+*Leiame ebaloogilisi väärtusi - 10 toodet kahjumiga*.
 | Negatiivne omahind | Negatiivne müügihind | Liiga kõrge omahind | Liiga kõrge müügihind | Kahjumiga tooted |
 | :----------------: | :------------------: | :-----------------: | :-------------------: | :--------------: |
 | 0                  | 0                    | 0                   | 0                     | 10               |
 
-*Vaatame kategooriate veerust* `category` *ja alamkategooriate veerust* `subcategory` *omavahelist sobivust - paarid on loogilised*
+*Vaatame kategooriate veerust* `category` *ja alamkategooriate veerust* `subcategory` *omavahelist sobivust - paarid on loogilised*.
 | Kategooria  | Alamkategooriad                                  |
 | :---------: | :----------------------------------------------: |
 | Accessories | ehted, kindad, kotid, mütsid, sallid, vööd       |
@@ -84,19 +84,38 @@ Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumi
 | Menswear    | jakid, kampsunid, püksid, särgid, ülikonnad      |
 | Womenswear  | jakid, kleidid, pluusid, püksid, pusad, seelikud |
 
-*Eraldi vaatame alamkategooriaid, mis kohtuvad mitmes kategoorias. Neid on kolm ja need tootetüübid võivad eksisteerida mitmes kategoorias*
+*Eraldi vaatame alamkategooriaid, mis kohtuvad mitmes kategoorias. Neid on kolm ja need tootetüübid võivad eksisteerida mitmes kategoorias*.
 | Alamkategooria | Mitmes kategoorias | Mis kategooriates              |
 | :------------: | :----------------: | :----------------------------: |
 | jakid          | 3                  | Kidswear, Menswear, Womenswear |
 | püksid         | 3                  | Kidswear, Menswear, Womenswear |
 | kleidid        | 2                  | Kidswear, Womenswear           |
 
-*Kannete vahemik on kooskõlas teiste tabelitega*
+*Kannete vahemik on kooskõlas teiste tabelitega.*
 | Vanim toode | Uusim toode |
 | :---------: | :---------: |
 | 15.01.2020  | 16.12.2024  |
 
 ## Andmete järjekindlus
+
+Siin analüüsitakse kas andmed on konsistentsed. Tulemuseks on konsistentsuse kinnitus.
+
+*Andmed on võrdväärsed kategooriate lõikes, puudub domineeriv kategooria*. 
+| Kategooria  | Kogus |
+| :---------: | :---: |
+| Accessories | 67    |
+| Footwear    | 73    |
+| Kidswear    | 70    |
+| Menswear    | 82    |
+| Womenswear  | 70    |
+| KOKKU       | 362   |
+
+*Analüüs näitas, et originaalse ja normaliseeritud nimede arvud võrduvad ehk puuduvad vigased nimid. Analüüsiti* `product_name`, `category`, `subcategory` *ja* `supplier` *veerud*.
+| Originaalne nimi | Normaliseeritud nimi | Originaalne kategooria | Normaliseeritud kategooria | Originaalne alamkategooria | Normaliseeritud alamkategooria | Originaalne tarnija | Normaliseeritud tarnija |
+| :--------------: | :------------------: | :--------------------: | :------------------------: | :------------------------: | :----------------------------: | :-----------------: | :---------------------: |
+| 350              | 350                  | 5                      | 5                          | 22                         | 22                             | 15                  | 15                      |
+
+
 
 ## Kokkuvõte
 **Kontrollitud probleemid**: Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll.
