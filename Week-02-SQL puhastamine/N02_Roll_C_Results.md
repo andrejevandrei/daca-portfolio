@@ -115,8 +115,6 @@ Siin analüüsitakse kas andmed on konsistentsed. Tulemuseks on konsistentsuse k
 | :--------------: | :------------------: | :--------------------: | :------------------------: | :------------------------: | :----------------------------: | :-----------------: | :---------------------: |
 | 350              | 350                  | 5                      | 5                          | 22                         | 22                             | 15                  | 15                      |
 
-
-
 ## Kokkuvõte
 **Kontrollitud probleemid**: Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll.
 
