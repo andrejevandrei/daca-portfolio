@@ -23,10 +23,10 @@ Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järj
 Eemaldada duplikaatsed nimekirjed, arvestades `eco_certified` väärtusi (jätta alles täielikum kirje), ning võimalusel täiendada puuduvad ökosertifikaatide data.
 
 ##  Projekti struktuur ja käivitamine
-- `N02_Roll_B_Grupitöö.sql` – SQL päringud andmete analüüsiks
-- `N01_Roll_B_Results.md` – Päringu tulemuste väljavõte
-- `N01_Roll_B_Grupitöö.sql` – SQL päringud andmete analüüsiks
-- `N01_Roll_B_Results.md` – Päringu tulemuste väljavõte
+- `N02_Kvaliteet.sql` – SQL päringud puhastamisrapordi jaoks
+- `N02_Toomase_puhastamisraport.md` – Puhastamisraport IT-direktor Toomas Kasele
+- `N02_Roll_C_Grupitöö.sql` – SQL päringud andmete analüüsiks
+- `N02_Roll_C_Results.md` – Päringu tulemuste väljavõte
 
 ##  AI kasutamise reflektsioon
 Kasutasin AI-d (ChatGPT) concat ja round funktsioonide õppimiseks, et anda korrektset ülevadet linnade kohta
