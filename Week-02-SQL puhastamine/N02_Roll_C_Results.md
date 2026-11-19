@@ -66,6 +66,30 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 | :----: | :----------: | :--------------: | :-------: | :--------: | :----------: | :----------------: | :----------------: |
 | 0      | 0            | 0                | 0         | 0          | 0            | 18                 | 0                  |
 
+## Andmete loogilisus
+
+Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumiga, mis vajab ärilist tähelepanu. Ülejäänud andmed on järjekindlad ja loogilised.
+
+*Leiame ebaloogilisi väärtusi - 10 toodet kahjumiga*
+| Negatiivne omahind | Negatiivne müügihind | Liiga kõrge omahind | Liiga kõrge müügihind | Kahjumiga tooted |
+| :----------------: | :------------------: | :-----------------: | :-------------------: | :--------------: |
+| 0                  | 0                    | 0                   | 0                     | 10               |
+
+*Vaatame kategooriate veerust* `category` *ja alamkategooriate veerust* `subcategory` *omavahelist sobivust - paarid on loogilised*
+| Kategooria  | Alamkategooriad                                  |
+| :---------: | :----------------------------------------------: |
+| Accessories | ehted, kindad, kotid, mütsid, sallid, vööd       |
+| Footwear    | botased, kingad, kontsad, sandaalid, tossud      |
+| Kidswear    | jakid, kleidid, komplektid, püksid, trikotaaž    |
+| Menswear    | jakid, kampsunid, püksid, särgid, ülikonnad      |
+| Womenswear  | jakid, kleidid, pluusid, püksid, pusad, seelikud |
+
+*Eraldi vaatame alamkategooriaid, mis kohtub mitmes kategoorias. Neid on kolm ja need tootetüübid võivad eksisteerida mitmes kategoorias*
+| Alamkategooria | Mitmes kategoorias | Mis kategooriates              |
+| :------------: | :----------------: | :----------------------------: |
+| jakid          | 3                  | Kidswear, Menswear, Womenswear |
+| püksid         | 3                  | Kidswear, Menswear, Womenswear |
+| kleidid        | 2                  | Kidswear, Womenswear           |
 
 ## Kokkuvõte
 **Kontrollitud probleemid**: Duplikaatide ja puuduvate väärtuste otsimine ning andmete loogilisuse ja järjepidevuse kontroll.
