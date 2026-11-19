@@ -29,5 +29,4 @@ Eemaldada duplikaatsed nimekirjed, arvestades `eco_certified` väärtusi (jätta
 - `N02_Roll_C_Results.md` – Päringu tulemuste väljavõte
 
 ##  AI kasutamise reflektsioon
-Kasutasin AI-d (ChatGPT) concat ja round funktsioonide õppimiseks, et anda korrektset ülevadet linnade kohta
-
+Kasutasin AI-d (ChatGPT) string_agg funktsiooni õppimiseks, et paremini presenteerida tulemust
