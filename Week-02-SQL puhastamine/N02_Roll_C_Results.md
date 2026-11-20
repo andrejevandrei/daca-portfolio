@@ -70,10 +70,24 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 
 Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumiga, mis vajab ärilist tähelepanu. Ülejäänud andmed on järjekindlad ja loogilised.
 
-*Leiame ebaloogilisi väärtusi - 10 toodet kahjumiga*.
+*Leiame ebaloogilisi väärtusi - 8 toodet kahjumiga (kaks on duplikaadid)*.
 | Negatiivne omahind | Negatiivne müügihind | Liiga kõrge omahind | Liiga kõrge müügihind | Kahjumiga tooted | Müügihind vähemalt 2x omahind | Omahind vähemalt 2x müügihind |
 | :----------------: | :------------------: | :-----------------: | :-------------------: | :--------------: | :---------------------------: | :---------------------------: |
 | 0                  | 0                    | 0                   | 0                     | 10               | 0                             | 0                             |
+
+*Kahjumiga tooted - 2 on duplikaadid*
+| product_id | product_name                    | category    | subcategory | supplier                | cost_price | retail_price | eco_certified | created_at |
+| :--------: | :-----------------------------: | :---------: | :---------: | :---------------------: | :--------: | :----------: | :-----------: | :--------: |
+| 1043       | Elegantne orgaaniline tuulejope | Kidswear    | jakid       | Eesti Nahk AS           | 128.44     | 87.06        | false         | 2022-04-12 |
+| 1076       | Klassikaline džersii bleiser    | Menswear    | jakid       | Nordic Fashion Group OÜ | 89.29      | 53.01        | true          | 2023-10-06 |
+| 1010       | Klassikaline puust nahkvöö      | Accessories | vööd        | Eesti Nahk AS           | 186.77     | 111.74       | true          | 2022-05-18 |
+| 1212       | Minimalistlik kashmiir bleiser  | Womenswear  | jakid       | Tallinna Rõivatehas OÜ  | 276.20     | 185.46       | false         | 2021-10-28 |
+| 1353       | Minimalistlik kashmiir bleiser  | Womenswear  | jakid       | Tallinna Rõivatehas OÜ  | 276.20     | 185.46       | false         | 2021-10-28 |
+| 1110       | Moodne polüester slim-fit särk  | Menswear    | särgid      | Tallinna Rõivatehas OÜ  | 151.08     | 100.78       | false         | 2023-09-21 |
+| 1027       | Praktiline viskoosne jakk       | Womenswear  | jakid       | Nordic Fashion Group OÜ | 346.70     | 213.35       | false         | 2023-12-25 |
+| 1261       | Vintage nahkne tossud           | Footwear    | tossud      | Riia Stils SIA          | 305.72     | 179.95       | null          | 2020-07-28 |
+| 1351       | Vintage nahkne tossud           | Footwear    | tossud      | Riia Stils SIA          | 305.72     | 179.95       | false         | 2020-07-28 |
+| 1206       | Vintage villane kangasvöö       | Accessories | vööd        | Soome Tehdas OY         | 22.70      | 13.53        | true          | 2023-06-17 |
 
 *Vaatame kategooriate veerust* `category` *ja alamkategooriate veerust* `subcategory` *omavahelist sobivust - paarid on loogilised*.
 | Kategooria  | Alamkategooriad                                  |
