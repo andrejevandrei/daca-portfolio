@@ -79,9 +79,16 @@
       count (*) filter (where cost_price <=0) as "Negatiivne müügihind",
       count (*) filter (where cost_price >=1000) as "Liiga kõrge omahind",
       count (*) filter (where retail_price >=1000) as "Liiga kõrge müügihind",
-      count (*) filter (where cost_price > retail_price) as "Kahjumiga tooted"
+      count (*) filter (where cost_price > retail_price) as "Kahjumiga tooted",
+      count (*) filter (where cost_price > retail_price * 2 ) as "Müügihind vähemalt 2x omahind",
+      count (*) filter (where retail_price > cost_price * 2) as "Omahind vähemalt 2x müügihind"
       from products_test
     ;
+
+  -- Vaatame täpsemalt kahjumiga tooted - 2 on duplikaadid
+    select * from products_test
+      where cost_price > retail_price
+      order by product_name, product_id asc
 
   --Filtreerime kahjumlikud tooted
     select
@@ -234,3 +241,4 @@
       group by category
       order by category
     ;
+
