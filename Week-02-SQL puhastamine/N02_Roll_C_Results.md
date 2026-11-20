@@ -71,9 +71,9 @@ Test tabel aitab kontrollida kas muudatused aitavad jõuda sihini ilma et riskid
 Otsitakse ebaloogilisi väärtusi või erandeid. Tulemuseks on 10 toodet kahjumiga, mis vajab ärilist tähelepanu. Ülejäänud andmed on järjekindlad ja loogilised.
 
 *Leiame ebaloogilisi väärtusi - 10 toodet kahjumiga*.
-| Negatiivne omahind | Negatiivne müügihind | Liiga kõrge omahind | Liiga kõrge müügihind | Kahjumiga tooted |
-| :----------------: | :------------------: | :-----------------: | :-------------------: | :--------------: |
-| 0                  | 0                    | 0                   | 0                     | 10               |
+| Negatiivne omahind | Negatiivne müügihind | Liiga kõrge omahind | Liiga kõrge müügihind | Kahjumiga tooted | Müügihind vähemalt 2x omahind | Omahind vähemalt 2x müügihind |
+| :----------------: | :------------------: | :-----------------: | :-------------------: | :--------------: | :---------------------------: | :---------------------------: |
+| 0                  | 0                    | 0                   | 0                     | 10               | 0                             | 0                             |
 
 *Vaatame kategooriate veerust* `category` *ja alamkategooriate veerust* `subcategory` *omavahelist sobivust - paarid on loogilised*.
 | Kategooria  | Alamkategooriad                                  |
